@@ -1,0 +1,59 @@
+System kontroli wersji
+System kontroli wersji jest to oprogramowanie s³u¿¹ce do œledzenia zmian 
+g³ównie w kodzie Ÿród³owym oraz pomocy programistom w ³¹czeniu zmian dokonanych przez wiele osób w ró¿nych 
+momentach. 
+
+Workflow (ang. work flow – przep³yw pracy) –Workflow to system obiegu dokumentów wspieraj¹cy realizacjê procesów 
+biznesowych. Narzêdzie pomaga w koordynacji prac prowadzonych przez wielu uczestników jednoczeœnie. System 
+posiada czytelny i prosty edytor procesów, pozwalaj¹cy na tworzenie diagramów obrazuj¹cych obieg informacji. 
+Jednoczeœnie umo¿liwia generowanie formularzy, za poœrednictwem których uczestnicy komunikuj¹ siê z systemem i 
+ze sob¹ nawzajem. Wówczas na podstawie utworzonego procesu nastêpuje odpowiedni przep³yw spraw pomiêdzy 
+pracownikami. Obrazuj¹c zagadnienie od strony praktyczniej, pracownik otrzymuje dostêp do skrzynki, w której 
+znajduj¹ siê aktualne sprawy wymagaj¹ce rozpatrzenia. Po wykonaniu zadania uzupe³nia przygotowane formularze, 
+do³¹cza dokumenty i przekazuje sprawê dalej. System automatycznie podejmie decyzjê do kogo nale¿y j¹ skierowaæ w 
+nastêpnej kolejnoœci. Mo¿e równie¿ automatycznie do³¹czyæ czêœæ informacji wnioskuj¹c z pracy wykonanej przez 
+uczestników. Typowym przyk³adem zastosowania Workflow to proces akceptacji ró¿nego rodzaju wniosków. 
+
+Systemy kontroli wersji dziel¹ siê na:
+scentralizowane, oparte na architekturze klient-serwer (np. CVS, Subversion)
+rozproszone, oparte na architekturze P2P (np. BitKeeper, Code Co-op, svk, Git).
+W tych pierwszych istnieje jedno centralne repozytorium, z którym wszyscy u¿ytkownicy systemu synchronizuj¹ 
+swoje zmiany, a te drugie pozwalaj¹ na prowadzenie równoprawnych, niezale¿nych ga³êzi, które mo¿na dowolnie 
+synchronizowaæ ze sob¹ nawzajem, np. poprzez e-mail (Code Co-op). Wybór odpowiedniego typu systemu kontroli 
+wersji zale¿y od potrzeb projektu.
+
+git init, tworzy repozytorium w katalogu w ktorym sie znajdujemy. 
+
+clone uzyskiwanie kopii istniej¹cego ju¿ repozytorium Gita 
+
+add dodaje wszystkie pliki w katalogu do repozytorium
+
+status pokaze pliki ktore sie zmienily, ktore nie dodalismy jeszcze do repozytorium
+
+diff eksportowanie danej ge³êzi
+
+commmit wykonujemy zapis aktualnej wersji projektu
+
+restet Poni¿sze polecenie cofa do wybranego commita, usówa danego commita
+
+rm Usuwanie plików z repozytorium w sposób rekursywny. Plik kasowany jest rowniez z katalogu projektu
+
+git-mv - Przenieœ lub zmienieñ nazwê pliku, katalogu
+
+git branch wyswietla wszystkie ga³êzie rozwojowe (ga³¹Ÿ na której pracujemy jest oznaczona * i zielonym 
+kolorem)
+
+checkout prze³¹czenie na inn¹ ga³¹Ÿ 
+
+merge - sposób integrowania zmian z jeden ga³êzi do drugiej- scalanie
+
+git log  pokaze ostatnio wykonane commity z ga³êzi na której aktualnie pracujemy
+
+stash chwilowe pozbywanie siê pliku, chowanie go do schowka
+
+ git pull pobiera wszystkie dane i odnoœniki ze zdalnego repozytorium i automatycznie scala zmiany z ga³êzi 
+zdalnej do odpowiedniej ga³êzi zdalnej.
+
+push wypchna ga³¹Ÿ g³ówn¹ master na oryginalny serwer Ÿród³owy origin (ponownie, klonowanie ustawia 
+obie te nazwy - master i origin - domyœlnie i automatycznie)
+
