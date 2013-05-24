@@ -16,4 +16,4 @@ git rm                    usuwania plików z repozytorium
 git add                   dodawanie plików do przechowalni
 git reset                 usuwanie plików z przechowalni
 git stash                przenoszenia plików znajduj¹cych siê w przechowalni do innej ga³êzi
-git branch                usuwania ga³êzi
+git branch                usuwania ga³êzi..
